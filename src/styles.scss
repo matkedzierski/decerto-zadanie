@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  padding: 20px 30px;
+}
+
+html{
+  font-family: Helvetica;
+}
+
+
+
+.tooltip {
+  text-align: center;
+  z-index: 10;
+  position: fixed;
+  padding: 15px 20px;
+  color: #367B9A;
+  width: auto;
+  border-radius: 5px;
+  background: #A0F1EB;
+  transform: translate(-50%, calc(-100% - 30px));
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.tooltip:before {
+  content: "";
+  z-index: 9;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: calc(100% - 8px);
+  left: 50%;
+  background: #A0F1EB;
+  transform: rotate(45deg);
+  transform-origin: top left;
+}

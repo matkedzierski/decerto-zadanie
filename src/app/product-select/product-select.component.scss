@@ -1,0 +1,31 @@
+.container {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.header{
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  border-radius: 5px 5px 0 0;
+  color: #777576;
+  padding: 15px;
+  font-size: 1.5em;
+}
+
+.content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.content.expanded {
+  min-height: 20px;
+}
+
+.panel-toggle{
+  float: right;
+  display: block;
+}

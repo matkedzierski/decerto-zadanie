@@ -1,0 +1,33 @@
+.item-container {
+  background: rgb(240,240,240);
+  background: linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(250,250,250,1) 30%, rgba(250,250,250,1) 70%, rgba(240,240,240,1) 100%);
+  width: 250px;
+  height: 100px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  box-shadow: 4px 4px 8px 0 #ccc;
+  -webkit-box-shadow: 4px 4px 8px 0 #ccc;
+  -moz-box-shadow: 4px 4px 8px 0 #ccc;
+  -o-box-shadow: 4px 4px 8px 0 #ccc;
+  position: relative;
+  cursor: pointer;
+}
+
+.item-container.selected {
+  background: rgb(1,39,74);
+  background: linear-gradient(0deg, rgba(1,39,74,1) 0%, rgba(0,56,107,1) 30%, rgba(0,56,107,1) 70%, rgba(1,39,74,1) 100%);
+  color: #fcfcfc;
+}
+
+.tooltip-icon {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding-top: 10px;
+}

@@ -1,0 +1,6 @@
+<div class="item-container" [class.selected]="selected">
+  <span class="item-title">{{product?.name}}</span>
+  <div class="tooltip-icon"  tooltip="{{product?.description}}">
+    <img [src]="selected ? 'assets/question-mark-white.svg' : 'assets/question-mark-black.svg'" alt="question_mark">
+  </div>
+</div>
